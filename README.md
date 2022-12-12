@@ -1,6 +1,25 @@
-# Getting Started with Create React App
+# Quizzical App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this app, the user can test himself depending on custom selections
+
+The app gets the questions from an API called `Open Trivia Database`
+
+## How to interact with the app
+
+1. The user can select the category. There are about 7 categories.
+2. He can select the number of questions that must be from 1 : 50
+3. He can select the type of the test [ `True / False` or `Multiple Choice` ].
+4. Also, he can select the test level [ `Easy` , `Medium` , `Hard` ].
+5. Then he can click the `Start quiz` button and start answering the questions.
+6. After he answers the questions, he can click the `Check answers` button to reveal the correct answers and his score.
+
+**_Hint_** >> The user won't get the score if he doesn't answer all the questions.
+
+7. After this, he can click the `Play again` button to retry the quiz and get a higher score, or click the `Return to start page` button to return to the start page and custom a new quiz.
+
+The project design is responsive, so enjoy interacting with it on whatever device you use.
+
+**Check it out** : [Quizzical App]()
 
 ## Available Scripts
 
