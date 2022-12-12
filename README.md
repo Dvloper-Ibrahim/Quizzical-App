@@ -15,11 +15,13 @@ The app gets the questions from an API called `Open Trivia Database`
 
 **_Hint_** >> The user won't get the score if he doesn't answer all the questions.
 
-7. After this, he can click the `Play again` button to retry the quiz and get a higher score, or click the `Return to start page` button to return to the start page and custom a new quiz.
+7. If he answers all of the questions correctly, the colorful papers will be falling from the top of the page celebrating his score
+
+8. After this, he can click the `Play again` button to retry the quiz and get a higher score, or click the `Return to start page` button to return to the start page and custom a new quiz.
 
 The project design is responsive, so enjoy interacting with it on whatever device you use.
 
-**Check it out** : [Quizzical App]()
+**Check it out** : [Quizzical App](https://dvloper-ibrahim.github.io/Quizzical-App/)
 
 ## Available Scripts
 

@@ -24,6 +24,12 @@ function App() {
   function returnToStartPage() {
     setResult(false);
     setQuestions([]);
+    setInputs((oldInputs) => ({
+      category: "",
+      number: "",
+      type: "",
+      level: "",
+    }));
   }
 
   // Function To Reveal The Correct Answers
@@ -61,22 +67,15 @@ function App() {
 
   // Function To Get The Questions Depending On The User Inputs
   async function getQuestions() {
-    let noInput = [
-      inputs.category,
-      inputs.number,
-      inputs.type,
-      inputs.level,
-    ].some((e) => e === "-- Choose --" || e === "");
-    let notANumber = [
-      inputs.category,
-      inputs.number,
-      inputs.type,
-      inputs.level,
-    ].some((e) => e < 1 || e > 50);
+    let noInput = Object.values(inputs).some(
+      (e) => e === "-- Choose --" || e === ""
+    );
+    let notANumber = Object.values(inputs).some((e) => e < 1 || e > 50);
 
     // Checking For Vaild Inputs
-    if (noInput || notANumber) setNotSelected(true);
-    else {
+    if (noInput || notANumber) {
+      setNotSelected(true);
+    } else {
       setNotSelected(false);
       let res = await fetch(
         `https://opentdb.com/api.php?amount=${inputs.number}&category=${inputs.category}&difficulty=${inputs.level}&type=${inputs.type}`
