@@ -13,13 +13,15 @@ The app gets the questions from an API called `Open Trivia Database`
 5. Then he can click the `Start quiz` button and start answering the questions.
 6. After he answers the questions, he can click the `Check answers` button to reveal the correct answers and his score.
 
-**_Hint_** >> The user won't get the score if he doesn't answer all the questions.
+**_Hint_ >>** The user won't get the score if he doesn't answer all the questions.
 
-7. If he answers all of the questions correctly, the colorful papers will be falling from the top of the page celebrating his score
+7. If he answers all of the questions correctly, the colorful papers will be falling from the top of the page celebrating his score [ what helped me to do that is the `Confetti` component imported from `react-confetti` pachage ].
 
 8. After this, he can click the `Play again` button to retry the quiz and get a higher score, or click the `Return to start page` button to return to the start page and custom a new quiz.
 
 The project design is responsive, so enjoy interacting with it on whatever device you use.
+
+**_Note That :_** Thw project is mainly created using **`React.js`**
 
 **Check it out** : [Quizzical App](https://dvloper-ibrahim.github.io/Quizzical-App/)
 
