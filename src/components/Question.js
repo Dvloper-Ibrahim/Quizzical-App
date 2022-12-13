@@ -43,7 +43,9 @@ export default function Question(props) {
 
   return (
     <div className="question">
-      <h3>{props.question}</h3>
+      <h3>
+        {props.id}. {props.question}
+      </h3>
       <div className="choices">{answers}</div>
     </div>
   );
